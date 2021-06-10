@@ -1,0 +1,37 @@
+<div class="main show">
+<h3>スケジュール詳細</h3>
+ 
+    <table>
+      <tr>
+        <th>タイトル</th>
+        <td><%= @post.title %></td>
+      </tr>
+      <tr>
+        <th>開始日</th>
+        <td><%= @post.started_at.to_s(:date_jp) %></td>
+      </tr>
+      <tr>
+        <th>終了日</th>
+        <td><%= @post.finished_at.to_s(:date_jp) %></td>
+      </tr>
+      <tr>
+        <th>完了</th>
+        <td><% if @post.completed == true %>
+        <%= "◯" %>
+        <% else %>
+        <%= " " %>
+        <% end %>
+        </td>
+      </tr>
+      <tr>
+        <th>メモ</th>
+        <td><%= @post.memo %></td>
+      </tr>
+    </table>
+ 
+    <div>
+      <ul>
+      <li class="botton"><%= link_to("スケジュール情報一覧に戻る","/") %></li>
+      </ul>
+    </div>
+    </div>

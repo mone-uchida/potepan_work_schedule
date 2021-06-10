@@ -1,15 +1,93 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html {
+    height: 100%;
+  }  
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+ }
+
+header{
+    padding:20px 0px;
+    background-color: #66CCFF;
+}
+
+.flash{
+    background-color:#99FFCC;
+    padding: 10px;
+}
+
+.main{
+    height:70%;
+}
+
+.new{
+    height:70%;
+}
+
+.index{
+    padding:10px 20px;
+}
+
+.index table{
+    width:90%;
+    border-collapse: collapse;
+    border: solid pink;
+    text-align: center;
+    font-size: large;
+}
+
+.edit table{
+    width:50%;
+    border-collapse: collapse;
+    border: solid pink;
+    font-size: large;
+}
+
+.new table{
+    width:50%;
+    border-collapse: collapse;
+    border: solid pink;
+    font-size: large;
+}
+
+.show table{
+    width:50%;
+    border-collapse: collapse;
+    border: solid pink;
+    font-size: large;
+}
+
+table th,tr,td{
+ border: solid pink;
+ text-align: center;
+ font-size: large;
+}
+
+input[type="text"] {
+    width: 98%;
+    height: 40px;
+    font-size: large;
+}
+
+input[type="date"] {
+    width: 98%;
+    height: 40px;
+}
+
+textarea {
+    width: 98%;
+    height: 90px;
+    font-size: large;
+}
+ .botton{
+    font-size:large;
+ }
+
+ footer{
+    width:100%;
+    padding:20px 0px;
+    background-color: #66CCFF;
+    font-size: large;
+}
